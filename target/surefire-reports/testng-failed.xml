@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.cbt.script.LoginPageTest">
+        <methods>
+          <include name="selectCity"/>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- com.cbt.script.LoginPageTest -->
+      <class name="com.cbt.script.MenCategoryTest">
+        <methods>
+          <include name="men"/>
+        </methods>
+      </class> <!-- com.cbt.script.MenCategoryTest -->
+      <class name="com.cbt.script.WomenCategoryTest">
+        <methods>
+          <include name="women"/>
+        </methods>
+      </class> <!-- com.cbt.script.WomenCategoryTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

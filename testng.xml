@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Preserve order test runs">
+    <parameter name="pdfngreport-properties" value="D:\New_Eclipse_Workspace\FlyrobeWeb\pdfngreport.properties" />
+    <listeners>
+       <listener class-name="com.cbt.generic.ITestngListners"/>
+       <listener class-name="com.uttesh.pdfngreport.PDFReportListener" />
+  </listeners>
+    
+  <test name="Test1" preserve-order="true">
+      <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="com.cbt.script.MenAccessoriesTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Test2">
+      <parameter name="browser" value="chrome"></parameter>
+    <classes>
+        <class name="com.cbt.script.MenAccessoriesTest"/>   
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test1(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.cbt.script.WomenCategoryTest">
+        <methods>
+          <include name="women"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- com.cbt.script.WomenCategoryTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test name="Test2(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.cbt.script.WomenCategoryTest">
+        <methods>
+          <include name="women"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- com.cbt.script.WomenCategoryTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
