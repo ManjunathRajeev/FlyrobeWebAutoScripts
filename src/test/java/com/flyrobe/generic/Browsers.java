@@ -33,7 +33,7 @@ public class Browsers
 		    FirefoxDriverManager.getInstance().setup();
 		    driver=new FirefoxDriver();
 		    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		    driver.get("http://www.flyrobe.com");
+		    driver.get("http://www.gmail.com");
 		
 		}
 		else if (browser.equalsIgnoreCase("Chrome"))
